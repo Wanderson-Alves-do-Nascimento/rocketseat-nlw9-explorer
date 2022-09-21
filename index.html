@@ -8,6 +8,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
   <title>NLW eSports</title>
 </head>
 <body>
@@ -22,33 +25,38 @@
       <div>
         <h2>Meus jogos</h2>
         <p>Os games que eu mais curto jogar!</p>
-        <ul class="games-list">
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/Dark%20Souls%20III">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/490292_IGDB-144x192.jpg" alt="Dark Souls III">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/Hollow%20Knight">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/490147_IGDB-144x192.jpg" alt="Hollow Knight">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/The%20Elder%20Scrolls%20V%3A%20Skyrim%20Special%20Edition">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/1050003477_IGDB-144x192.jpg" alt="ES Skyrim">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/No%20Man's%20Sky">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/458781_IGDB-144x192.jpg" alt="No Man's Sky">
-            </a>
-          </li>
-          <li>
-            <a target="_blank" href="https://www.twitch.tv/directory/game/The%20Witcher%203%3A%20Wild%20Hunt">
-              <img src="https://static-cdn.jtvnw.net/ttv-boxart/115977_IGDB-144x192.jpg" alt="The Witcher 3">
-            </a>
-          </li>
-        </ul>
+
+        <div class="swiper mySwiper">
+          <ul class="games-list swiper-wrapper">
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/Dark%20Souls%20III">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/490292_IGDB-144x192.jpg" alt="Dark Souls III">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/Hollow%20Knight">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/490147_IGDB-144x192.jpg" alt="Hollow Knight">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/The%20Elder%20Scrolls%20V%3A%20Skyrim%20Special%20Edition">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/1050003477_IGDB-144x192.jpg" alt="ES Skyrim">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/No%20Man's%20Sky">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/458781_IGDB-144x192.jpg" alt="No Man's Sky">
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a target="_blank" href="https://www.twitch.tv/directory/game/The%20Witcher%203%3A%20Wild%20Hunt">
+                <img src="https://static-cdn.jtvnw.net/ttv-boxart/115977_IGDB-144x192.jpg" alt="The Witcher 3">
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
     </section>
     
@@ -110,5 +118,10 @@
       </div>
     </section>
   </main>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script src="./main.js"></script>
 </body>
 </html>
